@@ -27,6 +27,7 @@
         <module>finflow-api-gateway</module>
         <module>finflow-platform-service</module>
         <module>finflow-customer-service</module>
+        <module>finflow-liquibase</module>
     </modules>
 
     <dependencyManagement>
@@ -48,6 +49,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+			<dependency>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-core</artifactId>
+				<version>4.23.2</version> <!-- latest stable -->
+			</dependency>
         </dependencies>
     </dependencyManagement>
 
